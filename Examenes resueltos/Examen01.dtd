@@ -1,0 +1,22 @@
+<!ELEMENT videoclub (peliculas, ofertas)>
+<!ELEMENT peliculas (pelicula+)>
+<!ELEMENT ofertas (oferta*)>
+<!ELEMENT pelicula (nombre, genero, precio, (disponible | alquilada))>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT genero (#PCDATA)>
+<!ELEMENT precio EMPTY>
+<!ELEMENT disponible EMPTY>
+<!ELEMENT alquilada EMPTY>
+<!ELEMENT oferta (#PCDATA | peliculasReferidas)*>
+<!ELEMENT peliculasReferidas ANY>
+<!ATTLIST videoclub direccion CDATA #IMPLIED 
+                      nombre CDATA #REQUIRED
+                      telefono CDATA #FIXED "957591456">
+<!ATTLIST pelicula codigo ID #REQUIRED
+                ingredientePrincipal (queso | frijoles | chile) "queso">
+<!ATTLIST peliculasReferidas codigoPelicula IDREF #REQUIRED
+                        comboPeliculas IDREFS #IMPLIED>
+<!ENTITY % atributoCoste "coste CDATA #IMPLIED"> 
+<!ATTLIST precio %atributoCoste;>
+<!ATTLIST oferta %atributoCoste;>
+<!ENTITY infantil "Todas las edades.">

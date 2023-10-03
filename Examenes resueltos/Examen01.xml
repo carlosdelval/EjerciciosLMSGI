@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE videoclub SYSTEM "Examen01.dtd">
+<videoclub direccion="Calle la Patica" nombre="Sensacine" telefono="957591456">
+  <peliculas>
+    <pelicula codigo="ques" ingredientePrincipal="queso">
+      <nombre>Insidious</nombre>
+      <genero>Terror</genero>
+      <precio coste="10" />
+      <alquilada />
+    </pelicula>
+    <pelicula codigo="ench">
+      <nombre>Hércules &infantil;</nombre>
+      <genero>Fantasía</genero>
+      <precio coste="20" />
+      <disponible />
+    </pelicula>
+  </peliculas>
+  <ofertas>
+    <oferta coste="15">2x1 
+      <peliculasReferidas codigoPelicula="ques" comboPeliculas="ques ench" />
+    </oferta>
+  </ofertas>
+</videoclub>
