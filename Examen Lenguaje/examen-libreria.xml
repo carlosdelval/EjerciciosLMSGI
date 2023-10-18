@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo SYSTEM "examen-libreria.dtd">
+<catalogo>
+    <libro codigo="Harry" precio="20" editorial="Editorial La Mejor">
+        <autor>JK Rowling</autor>
+        <nombre>Harry Potter</nombre>
+        <dedicatoria />
+        <disponible />
+    </libro>
+    <libro codigo="Thor" precio="10" editorial="Editorial La Mejor">
+        <autor>Marvel</autor>
+        <nombre>Thor y el rayo</nombre>
+        <disponible />
+    </libro>
+    <oferta anuncio="Llevate 2x1!">Oferta 2x1 en &marvel;
+        <combo anuncio="Oferta en Potter y Thor!" codigoLibro="Harry" codigoCombo="Thor">
+        </combo>
+    </oferta>
+</catalogo>

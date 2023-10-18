@@ -1,0 +1,18 @@
+<!ELEMENT catalogo (libro*, oferta)>
+<!ELEMENT libro (autor+, nombre, dedicatoria?, (disponible | agotado))>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT dedicatoria EMPTY>
+<!ELEMENT disponible EMPTY>
+<!ELEMENT agotado EMPTY>
+<!ATTLIST libro codigo ID #REQUIRED
+                precio (20 | 10 | 15) "20"
+                editorial CDATA #FIXED "Editorial La Mejor">
+<!ELEMENT oferta (#PCDATA | combo)*>
+<!ELEMENT combo ANY>
+<!ATTLIST combo codigoLibro IDREF #REQUIRED
+                codigoCombo IDREFS #IMPLIED>
+<!ENTITY % atributoOferta "anuncio CDATA #IMPLIED">
+<!ATTLIST oferta %atributoOferta;>
+<!ATTLIST combo %atributoOferta;>
+<!ENTITY marvel "Comic de superheroes">
