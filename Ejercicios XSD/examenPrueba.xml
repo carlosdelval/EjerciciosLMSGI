@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<disney xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="examenPrueba.xsd">
+    Un monton de muñecos de disney.
+    <pelicula nombre="Lilo y Stitch" countPersonajes="3">
+        <protagonista nombre="Lilo" nacionalidad="Hawaiana"/>
+        <protagonista nombre="Stitch" nacionalidad="Turense" experimento="626"/>
+        <protagonista nombre="Dr. Jumba" nacionalidad="Turense" />
+        <antagonista nombre="Reuben" nacionalidad="Turense" experimento="625"/>
+        <antagonista nombre="Gantu" nacionalidad="Turense"/>
+    </pelicula>
+
+    <produccion>
+        <animacion>
+            <animada/>
+        </animacion>
+        <estreno>2020</estreno>
+    </produccion>
+/</disney>

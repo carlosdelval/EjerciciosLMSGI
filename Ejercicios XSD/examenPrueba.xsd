@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="disney" type="tipoDisney"/>
+
+  <xs:complexType name="tipoDisney" mixed="true">
+    <xs:all>
+      <xs:element name="pelicula" type="tipoPelicula" />
+      <xs:element name="produccion" type="tipoProduccion" />
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="tipoProduccion">
+    <xs:sequence>
+      <xs:element name="animacion" type="tipoAnimacion" maxOccurs="1"/>
+      <xs:element name="estreno" type="tipoEstreno" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="tipoEstreno">
+    <xs:simpleContent>
+      <xs:extension base="numericoEntre2002y2023">
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:simpleType name="numericoEntre2002y2023">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="2002"/>
+      <xs:maxInclusive value="2023"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="tipoAnimacion">
+    <xs:choice>
+      <xs:element name="animada" type="tipoAnimada"/>
+      <xs:element name="realista" type="tipoRealista"/>
+    </xs:choice>
+    <xs:attribute name="nombre" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="tipoAnimada">
+  </xs:complexType>
+
+  <xs:complexType name="tipoRealista">
+  </xs:complexType>
+
+  <xs:complexType name="tipoPelicula">
+    <xs:sequence>
+      <xs:element name="protagonista" type="tipoProtagonista" maxOccurs="unbounded"/>
+      <xs:element name="antagonista" type="tipoAntagonista" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="nombre" type="xs:string"/>
+    <xs:attribute name="countPersonajes" type="xs:integer"/>
+  </xs:complexType>
+
+  <xs:simpleType name="tipoExperimento">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoNacionalidadExtraterrestre">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Turense"/>
+      <xs:enumeration value="Peruana"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoNacionalidadUSA">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Hawaiana"/>
+      <xs:enumeration value="Estadounidense"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoNacionalidad">
+    <xs:union memberTypes="tipoNacionalidadUSA tipoNacionalidadExtraterrestre"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoNacionalidades">
+    <xs:list itemType="tipoNacionalidad"/>
+  </xs:simpleType>
+
+  <xs:complexType name="tipoAntagonista">
+    <xs:attribute name="nombre" type="xs:string" />
+    <xs:attribute name="experimento" type="tipoExperimento"/>
+    <xs:attribute name="nacionalidad" type="tipoNacionalidades" />
+  </xs:complexType>
+
+  <xs:complexType name="tipoProtagonista">
+    <xs:complexContent>
+      <xs:extension base="tipoAntagonista">
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+</xs:schema> 
