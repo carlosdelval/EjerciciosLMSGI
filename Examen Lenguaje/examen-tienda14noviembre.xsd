@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="tiendas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="tienda" type="tipoTienda" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- 
+        Con all puedes utilizar todos los elementos declarados en cualquier orden pero solo podrá
+        aparecer UNA sola vez cada elemento.
+  -->
+
+    <xs:complexType name="tipoTienda">
+        <xs:all>
+            <xs:element name="nombre" type="tipoNombre"></xs:element>
+            <xs:element name="regalos" type="tipoRegalos"></xs:element>
+        </xs:all>
+        <xs:attribute name="descuentosAplicables" type="tipoAplicable"></xs:attribute>
+        <xs:attribute name="descuento" type="tipoDescuento"></xs:attribute>
+        <xs:attribute name="cif"></xs:attribute>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoDescuento">
+        <xs:union memberTypes="tipo1 tipo2">
+        </xs:union>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipo1">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="15%"></xs:enumeration>
+            <xs:enumeration value="10%"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipo2">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="20%"></xs:enumeration>
+            <xs:enumeration value="25%"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoAplicable">
+    <xs:list itemType="tipoDescuento"/>
+  </xs:simpleType>
+
+    <xs:complexType name="tipoNombre" mixed="true">
+    </xs:complexType>
+
+    <xs:complexType name="tipoRegalos">
+        <xs:sequence>
+            <xs:element name="regalo" type="tipoRegalo"></xs:element>
+            <xs:element name="bombazo" type="tipoBombazo"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- 
+        El tipo sequence puede incorporar una cardinalidad determinada y de un determinado orden.
+  -->
+
+    <xs:complexType name="tipoBombazo" mixed="true">
+        <xs:sequence>
+            <xs:element name="url" type="tipoUrl"></xs:element>
+            <xs:element name="marca" type="tipoMarca" minOccurs="0"></xs:element>
+        </xs:sequence>
+        <xs:attribute name="codigo" type="tipoCodigo"></xs:attribute>
+        <xs:attribute name="precio" type="tipoPrecio"></xs:attribute>
+        <xs:attribute name="iva" type="tipoIva"></xs:attribute>
+        <xs:attribute name="descuento" type="tipoDescuento"></xs:attribute>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoPrecio">
+        <xs:restriction base="xs:float">
+            <xs:minInclusive value="0"></xs:minInclusive>
+            <xs:maxInclusive value="10000"></xs:maxInclusive>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoIva">
+        <xs:restriction base="tipoPrecio">
+            <xs:maxInclusive value="50"></xs:maxInclusive>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- 
+        El tipo choice tiene cardinalidad determinada pero solo puedes incorporar UNO de todos los elementos.
+  -->
+
+    <xs:complexType name="tipoUrl">
+        <xs:simpleContent>
+        <xs:extension base="tipoPatron">
+            <xs:attribute name="tipo" type="xs:string" />
+        </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+
+    <xs:simpleType name="tipoPatron">
+        <xs:restriction base="xs:string">
+           <xs:pattern value="http://[A-Z].com/[A-Z][-]*[A-Z]"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="tipoMarca">
+        <xs:choice>
+            <xs:element name="mattel" type="tipoMattel"></xs:element>
+            <xs:element name="giochiPreziosi" type="tipoGiochi"></xs:element>
+        </xs:choice>
+    </xs:complexType>
+
+    <xs:complexType name="tipoMattel">
+    </xs:complexType>
+
+    <xs:complexType name="tipoGiochi">
+    </xs:complexType>
+    
+    <xs:simpleType name="tipoCodigo">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([0-9]{3}|[A-Z]{3})([0-9]{3}|[A-Z]{3})([0-9]{3}|[A-Z]{3})">
+            </xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="tipoRegalo">
+    <xs:complexContent>
+        <xs:extension base="tipoBombazo">
+        </xs:extension>
+    </xs:complexContent>
+    </xs:complexType>
+
+
+
+
+
+
+
+
+
+
+
+</xs:schema>
