@@ -7,10 +7,6 @@
     <meta name="Pokemon" content="Equipos Pokemon" />
 	<meta name="description" content="Los mejores equipos pokemon." />
     <meta name="author" content="Carlos López Del Val"/>
-    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
 </head>
 
 <style>
@@ -19,47 +15,204 @@
         background-image: url(https://c4.wallpaperflare.com/wallpaper/931/229/236/pokemon-tile-cartoon-pattern-hd-wallpaper-preview.jpg)
     }
 
-    @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+    #logo{
+        width: 100%;
+        height: 216px;
+        border-bottom: 1px solid #cbb713;
+        background: #FFFFFF url(https://upload.wikimedia.org/wikipedia/en/f/fc/2023_Pokémon_World_Championships_logo.png) no-repeat right;
+        background-size: contain;
+    }
 
-    div.mycontainer {
-    width:100%;
-    overflow:auto;
+    #navegador > div > ul > li{
+        background: #edce01 url(data:image/gif;base64,R0lGODdhAQAWAKEDAN+hA+a3Au3OAf///ywAAAAAAQAWAAACBpSPEsDtBQA7) repeat-x left center;
+        margin: 1px 1px 0 1px;
+        padding: 0 0 0 10px;
+        color: #fff;
+        width: auto;
+        text-shadow: #555 1px 1px 3px;
+        box-shadow: 2px 2px 5px #333;
     }
-    div.mycontainer div {
-    width:33%;  
-    float:left;
+
+    #navegador li{
+        display: block;
+        position: relative;
+        background: #fff;
+        color: #000;
+        font-size: 14.9px;
+        font-family: sans-serif;
+        padding: 0 0 0 10px;
+        line-height: 24px;
+        font-weight: bold;
+        text-decoration: none;
+        border-bottom: 1px solid #EEEEEE;
     }
-    #menu{
+    ul{
+        list-style-type: square;
+    }
+    li {
+    text-align: -webkit-match-parent;
+    }
+    .border{
+        border-collapse: collapse;
+    }
+    .portada{
+        margin: 15px 5px;
+        background-color: #fffad9;
+        box-shadow: 0.1em 0.1em 1em #ffca2b;
+        border: 1px solid #ffca2b;
+        border-radius: 25px;
+        overflow: hidden;
+    }
+    .tituloPrincipal{
+        background-color: #ffd865;
         text-align: center;
+        padding: 4px;
+        font-family: sans-serif;
         font-weight: bold;
     }
-    #menu li{
-        display: inline-block;
-        width: 100px;
+    p {
+        margin: 0.4em 0 0.5em 0;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-family: sans-serif;
     }
-    .tipoTitulo{
-        font-family: 'Acme', sans-serif;
-        font-family: 'Nanum Pen Script', cursive;
-        text-align: center;
+
+    div.gallery {
+    border: 1px solid #ccc;
     }
+
+    div.gallery:hover {
+    border: 1px solid #777;
+    }
+
+    div.gallery img {
+    width: 100%;
+    height: auto;
+    }
+
+    div.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: sans-serif;
+    }
+
+    * {
+    box-sizing: border-box;
+    }
+
+    .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    }
+
+    @media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+    }
+
+    @media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+    }
+
+    .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+    
 </style>
 
 <body>
-    <h1 style="text-align: center;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png" height="100px">
-    </h1>
-    <h1 class="tipoTitulo">Torneo nacional Pokemon VGC Liverpool 2023</h1>
-    <div id="menu">
-        <ul>
-            <li><img src="https://i.gifer.com/origin/28/2860d2d8c3a1e402e0fc8913cd92cd7a_w200.gif" height="40px"></li>
-            <li>Torneo</li>
-            <li>Top10</li>
-            <li>Reportaje</li>
-            <li>Galería</li>
-            <li><img src="https://i.gifer.com/origin/28/2860d2d8c3a1e402e0fc8913cd92cd7a_w200.gif" height="40px"></li>
-        </ul>
+    <div id="logo" role="banner">
+        <img src="https://upload.wikimedia.org/wikipedia/en/e/e8/Pokémon_World_Championships_logo.png" height="216px" alt="worldLogo">
+        <img src="https://i.gifer.com/origin/76/76dfca2a58c4dff5c9827b527132bda8.gif" alt="pikachuPortada" height="216px">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/029b8bd9-cb5a-41e4-9c7e-ee516face9bb/dayo3ow-7ac86c31-8b2b-4810-89f2-e6134caf1f2d.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAyOWI4YmQ5LWNiNWEtNDFlNC05YzdlLWVlNTE2ZmFjZTliYlwvZGF5bzNvdy03YWM4NmMzMS04YjJiLTQ4MTAtODlmMi1lNjEzNGNhZjFmMmQuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ooubhxjHp9PIMhVxvCFHziI6pxDAS8glXPWenUeomWs" alt="pokeballPortada" height="150px">
     </div>
-    <div></div>
+    <div role="navegacion" id="navegador">
+            <div class="border">
+                <ul>
+                    <li>
+                        Torneo
+                    </li>
+                    <li>
+                        Top5
+                    </li>
+                    <li>
+                        Equipo Ganador
+                    </li>
+                    <li>
+                        Galería
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <div class="portada" style="margin-bottom: 5px; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+        <div class="tituloPrincipal">
+            <div style="font-size: 250%; line-height: 1.2em;">Mundial Pokemon VGC</div>
+            <div style="font-size: 125%;">Yokohama 2023</div>
+        </div>
+        <div style="float:right; padding:5px; direction: ltr; display: block;">
+            <img alt="Yokohama.jpg" src="https://automaton-media.com/en/wp-content/uploads/2023/08/20230810-20685-001-1.jpg" height="300px"/>
+        </div>
+        <div style="font-size: 110%; padding: 5px 20px;">
+            <p>El Campeonato Mundial Pokémon 2023 es el evento culminante de la temporada de la Serie de Campeonatos 2023, y jugadores de todo el mundo combatirán por el título de Campeón o Campeona Mundial. Solo se puede acceder a los eventos principales 
+                del Campeonato Mundial Pokémon por invitación. Consulta las páginas de información para jugadores de JCC Pokémon, videojuegos, Pokémon GO y Pokémon UNITE para conocer más detalles sobre el evento de este año.</p>
+            <p>Los Entrenadores combaten durante todo el año en diferentes torneos repartidos por regiones para tener la posibilidad de competir en el Campeonato Mundial Pokémon.</p>
+            <p>En esta web nos dedicaremos a hacer un repaso de los mejores momentos del evento, y nos centraremos concretamente en el torneo de VGC (Videogames Championship), analizando las estrategias usadas por los principales contendientes al título y los equipos usados.</p>
+        </div>
+    </div>
+    <div style="margin: 0 15px; border-top: 1px dashed #FFCA2B; border-bottom: 1px dashed #FFCA2B; height:2px;"></div>
+    <div class="portada" style="margin-bottom: 5px; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+        <div class="tituloPrincipal">
+            <div style="font-size: 150%; line-height: 1.2em;">Top3 Pokemon usados</div>
+        </div>
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="https://bulbapedia.bulbagarden.net/wiki/Flutter_Mane_(Pokémon)">
+                <img src="https://dotesports.com/wp-content/uploads/2023/07/Pokemon-Flutter-Mane.png?w=1200" alt="Flutter Mane">
+              </a>
+            </div>
+            <div class="desc">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Fantasma_Pokemon.svg/1280px-Fantasma_Pokemon.svg.png" height="50" alt="tipoFantasma">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Hada_Pokemon.svg/1280px-Hada_Pokemon.svg.png" alt="tipoHada" height="50">
+                <div class="desc">Nº1: Flutter Mane</div>
+            </div>
+          </div>
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="https://bulbapedia.bulbagarden.net/wiki/Urshifu_(Pokémon)">
+                <img src="https://1.bp.blogspot.com/-lIDjPQNzR2E/XyQ6oA2YAHI/AAAAAAAACvA/e67CdIJujFEHCnkFG6v8vcnAt196ImJbACLcBGAsYHQ/s1600/2020073017313700-B8FAEF4816CAC2B76D11869B05CA7601.jpg" alt="Urshifu">
+              </a>
+            </div>
+            <div class="desc">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Lucha_Pokemon.svg" height="50" alt="tipoLucha">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Agua_Pokemon.svg/2560px-Agua_Pokemon.svg.png" alt="tipoHada" height="50">
+                <div class="desc">Nº2: Urshifu - Rapid Strikes</div>
+            </div>
+          </div>
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="https://bulbapedia.bulbagarden.net/wiki/Iron_Hands_(Pokémon)">
+                <img src="https://staticg.sportskeeda.com/editor/2022/12/a5df5-16704627214941-1920.jpg" alt="IronHands">
+              </a>
+          </div>
+          <div class="desc">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Eléctrico_Pokemon.svg/2560px-Eléctrico_Pokemon.svg.png" height="50" alt="tipoElectrico">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Lucha_Pokemon.svg" alt="tipoLucha" height="50">
+            <div class="desc">Nº3: Iron Hands</div>
+        </div>
+          <div class="clearfix"></div>
+    </div>
+    
 </body>
 
 </html>
