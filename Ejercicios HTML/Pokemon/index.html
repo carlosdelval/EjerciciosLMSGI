@@ -11,6 +11,20 @@
 
 <style>
 
+    article{
+        float: right;
+        width: 80%;
+    }
+
+    aside{
+        float: left;
+        width: 20%;
+    }
+
+    div{
+        display: block;
+    }
+
     body{
         background-image: url(https://c4.wallpaperflare.com/wallpaper/931/229/236/pokemon-tile-cartoon-pattern-hd-wallpaper-preview.jpg)
     }
@@ -23,7 +37,7 @@
         background-size: contain;
     }
 
-    #navegador > div > ul > li{
+    #navegador > div > ul > a > li{
         background: #edce01 url(data:image/gif;base64,R0lGODdhAQAWAKEDAN+hA+a3Au3OAf///ywAAAAAAQAWAAACBpSPEsDtBQA7) repeat-x left center;
         margin: 1px 1px 0 1px;
         padding: 0 0 0 10px;
@@ -45,7 +59,10 @@
         font-weight: bold;
         text-decoration: none;
         border-bottom: 1px solid #EEEEEE;
+        text-shadow: #555 1px 1px 3px;
+        box-shadow: 2px 2px 5px #333;
     }
+
     ul{
         list-style-type: square;
     }
@@ -132,86 +149,130 @@
 </style>
 
 <body>
-    <div id="logo" role="banner">
+    <header>
+    <div class="responsive" id="logo">
         <img src="https://upload.wikimedia.org/wikipedia/en/e/e8/Pokémon_World_Championships_logo.png" height="216px" alt="worldLogo">
         <img src="https://i.gifer.com/origin/76/76dfca2a58c4dff5c9827b527132bda8.gif" alt="pikachuPortada" height="216px">
         <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/029b8bd9-cb5a-41e4-9c7e-ee516face9bb/dayo3ow-7ac86c31-8b2b-4810-89f2-e6134caf1f2d.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAyOWI4YmQ5LWNiNWEtNDFlNC05YzdlLWVlNTE2ZmFjZTliYlwvZGF5bzNvdy03YWM4NmMzMS04YjJiLTQ4MTAtODlmMi1lNjEzNGNhZjFmMmQuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ooubhxjHp9PIMhVxvCFHziI6pxDAS8glXPWenUeomWs" alt="pokeballPortada" height="150px">
     </div>
-    <div role="navegacion" id="navegador">
-            <div class="border">
-                <ul>
-                    <li>
-                        Torneo
-                    </li>
-                    <li>
-                        Top5
-                    </li>
-                    <li>
-                        Equipo Ganador
-                    </li>
-                    <li>
-                        Galería
-                    </li>
-                </ul>
+    </header>
+    <section>
+        <aside>
+            <div id="navegador">
+                <div class="border">
+                    <ul>
+                        <li>Navegación:</li>
+                        <a>
+                            <li>
+                                Torneo                      
+                            </li> 
+                        </a>                      
+                        <a>
+                            <li>
+                                Top 5                     
+                            </li> 
+                        </a> 
+                        <a>
+                            <li>
+                                Equipo Ganador                    
+                            </li> 
+                        </a> 
+                        <a>
+                            <li>
+                                Galería                      
+                            </li> 
+                        </a> 
+                    </ul>
+                </div>
             </div>
-        </div>
-    <div class="portada" style="margin-bottom: 5px; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
-        <div class="tituloPrincipal">
-            <div style="font-size: 250%; line-height: 1.2em;">Mundial Pokemon VGC</div>
-            <div style="font-size: 125%;">Yokohama 2023</div>
-        </div>
-        <div style="float:right; padding:5px; direction: ltr; display: block;">
-            <img alt="Yokohama.jpg" src="https://automaton-media.com/en/wp-content/uploads/2023/08/20230810-20685-001-1.jpg" height="300px"/>
-        </div>
-        <div style="font-size: 110%; padding: 5px 20px;">
-            <p>El Campeonato Mundial Pokémon 2023 es el evento culminante de la temporada de la Serie de Campeonatos 2023, y jugadores de todo el mundo combatirán por el título de Campeón o Campeona Mundial. Solo se puede acceder a los eventos principales 
-                del Campeonato Mundial Pokémon por invitación. Consulta las páginas de información para jugadores de JCC Pokémon, videojuegos, Pokémon GO y Pokémon UNITE para conocer más detalles sobre el evento de este año.</p>
-            <p>Los Entrenadores combaten durante todo el año en diferentes torneos repartidos por regiones para tener la posibilidad de competir en el Campeonato Mundial Pokémon.</p>
-            <p>En esta web nos dedicaremos a hacer un repaso de los mejores momentos del evento, y nos centraremos concretamente en el torneo de VGC (Videogames Championship), analizando las estrategias usadas por los principales contendientes al título y los equipos usados.</p>
-        </div>
-    </div>
-    <div style="margin: 0 15px; border-top: 1px dashed #FFCA2B; border-bottom: 1px dashed #FFCA2B; height:2px;"></div>
-    <div class="portada" style="margin-bottom: 5px; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
-        <div class="tituloPrincipal">
-            <div style="font-size: 150%; line-height: 1.2em;">Top3 Pokemon usados</div>
-        </div>
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="https://bulbapedia.bulbagarden.net/wiki/Flutter_Mane_(Pokémon)">
-                <img src="https://dotesports.com/wp-content/uploads/2023/07/Pokemon-Flutter-Mane.png?w=1200" alt="Flutter Mane">
-              </a>
+            <div id="navegador">
+                <div class="border">
+                    <ul>
+                        <li>Enlaces útiles:</li>
+                        <a target="_blank" href="https://worlds.pokemon.com/es-es/">
+                            <li>
+                                Web oficial                      
+                            </li> 
+                        </a>                       
+                        <a target="_blank" href="https://bulbapedia.bulbagarden.net/wiki/Main_Page">
+                            <li>
+                                Bulbapedia                      
+                            </li> 
+                        </a> 
+                        <a target="_blank" href="https://www.pikalytics.com/calc">
+                            <li>
+                                Calculadora daño                      
+                            </li> 
+                        </a> 
+                        <a target="_blank" href="https://www.vgcguide.com/">
+                            <li>
+                                Guía VGC                      
+                            </li> 
+                        </a> 
+                    </ul>
+                </div>
             </div>
-            <div class="desc">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Fantasma_Pokemon.svg/1280px-Fantasma_Pokemon.svg.png" height="50" alt="tipoFantasma">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Hada_Pokemon.svg/1280px-Hada_Pokemon.svg.png" alt="tipoHada" height="50">
-                <div class="desc">Nº1: Flutter Mane</div>
+        </aside>
+        <article>
+            <div class="portada" style="margin-bottom: 5px; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                <div class="tituloPrincipal">
+                    <div style="font-size: 250%; line-height: 1.2em;">Mundial Pokemon VGC</div>
+                    <div style="font-size: 125%;">Yokohama 2023</div>
+                </div>
+                <div style="float:right; padding:5px; direction: ltr; display: block;">
+                    <img alt="Yokohama.jpg" src="https://automaton-media.com/en/wp-content/uploads/2023/08/20230810-20685-001-1.jpg" height="300px"/>
+                </div>
+                <div style="font-size: 110%; padding: 5px 20px;">
+                    <p>El Campeonato Mundial Pokémon 2023 es el evento culminante de la temporada de la Serie de Campeonatos 2023, y jugadores de todo el mundo combatirán por el título de Campeón o Campeona Mundial. Solo se puede acceder a los eventos principales 
+                        del Campeonato Mundial Pokémon por invitación. Consulta las páginas de información para jugadores de JCC Pokémon, videojuegos, Pokémon GO y Pokémon UNITE para conocer más detalles sobre el evento de este año.</p>
+                    <p>Los Entrenadores combaten durante todo el año en diferentes torneos repartidos por regiones para tener la posibilidad de competir en el Campeonato Mundial Pokémon.</p>
+                    <p>En esta web nos dedicaremos a hacer un repaso de los mejores momentos del evento, y nos centraremos concretamente en el torneo de VGC (Videogames Championship), analizando las estrategias usadas por los principales contendientes al título y los equipos usados.</p>
+                </div>
             </div>
-          </div>
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="https://bulbapedia.bulbagarden.net/wiki/Urshifu_(Pokémon)">
-                <img src="https://1.bp.blogspot.com/-lIDjPQNzR2E/XyQ6oA2YAHI/AAAAAAAACvA/e67CdIJujFEHCnkFG6v8vcnAt196ImJbACLcBGAsYHQ/s1600/2020073017313700-B8FAEF4816CAC2B76D11869B05CA7601.jpg" alt="Urshifu">
-              </a>
+            <div style="margin: 0 15px; border-top: 1px dashed #FFCA2B; border-bottom: 1px dashed #FFCA2B; height:2px;"></div>
+            <div class="portada" style="margin-bottom: 5px; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                <div class="tituloPrincipal">
+                    <div style="font-size: 150%; line-height: 1.2em;">Top3 Pokemon usados</div>
+                </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="https://bulbapedia.bulbagarden.net/wiki/Flutter_Mane_(Pokémon)">
+                        <img src="https://dotesports.com/wp-content/uploads/2023/07/Pokemon-Flutter-Mane.png?w=1200" alt="Flutter Mane">
+                      </a>
+                    </div>
+                    <div class="desc">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Fantasma_Pokemon.svg/1280px-Fantasma_Pokemon.svg.png" height="50" alt="tipoFantasma">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Hada_Pokemon.svg/1280px-Hada_Pokemon.svg.png" alt="tipoHada" height="50">
+                        <div class="desc">Nº1: Flutter Mane</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="https://bulbapedia.bulbagarden.net/wiki/Urshifu_(Pokémon)">
+                        <img src="https://1.bp.blogspot.com/-lIDjPQNzR2E/XyQ6oA2YAHI/AAAAAAAACvA/e67CdIJujFEHCnkFG6v8vcnAt196ImJbACLcBGAsYHQ/s1600/2020073017313700-B8FAEF4816CAC2B76D11869B05CA7601.jpg" alt="Urshifu">
+                      </a>
+                    </div>
+                    <div class="desc">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Lucha_Pokemon.svg" height="50" alt="tipoLucha">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Agua_Pokemon.svg/2560px-Agua_Pokemon.svg.png" alt="tipoHada" height="50">
+                        <div class="desc">Nº2: Urshifu - Rapid Strikes</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="https://bulbapedia.bulbagarden.net/wiki/Iron_Hands_(Pokémon)">
+                        <img src="https://staticg.sportskeeda.com/editor/2022/12/a5df5-16704627214941-1920.jpg" alt="IronHands">
+                      </a>
+                  </div>
+                  <div class="desc">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Eléctrico_Pokemon.svg/2560px-Eléctrico_Pokemon.svg.png" height="50" alt="tipoElectrico">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Lucha_Pokemon.svg" alt="tipoLucha" height="50">
+                    <div class="desc">Nº3: Iron Hands</div>
+                </div>
+                  <div class="clearfix"></div>
             </div>
-            <div class="desc">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Lucha_Pokemon.svg" height="50" alt="tipoLucha">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Agua_Pokemon.svg/2560px-Agua_Pokemon.svg.png" alt="tipoHada" height="50">
-                <div class="desc">Nº2: Urshifu - Rapid Strikes</div>
-            </div>
-          </div>
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="https://bulbapedia.bulbagarden.net/wiki/Iron_Hands_(Pokémon)">
-                <img src="https://staticg.sportskeeda.com/editor/2022/12/a5df5-16704627214941-1920.jpg" alt="IronHands">
-              </a>
-          </div>
-          <div class="desc">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Eléctrico_Pokemon.svg/2560px-Eléctrico_Pokemon.svg.png" height="50" alt="tipoElectrico">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Lucha_Pokemon.svg" alt="tipoLucha" height="50">
-            <div class="desc">Nº3: Iron Hands</div>
-        </div>
-          <div class="clearfix"></div>
-    </div>
+            </article>
+    </section>
     
 </body>
 
