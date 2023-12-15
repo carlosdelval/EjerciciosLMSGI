@@ -1,0 +1,127 @@
+body{
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/931/229/236/pokemon-tile-cartoon-pattern-hd-wallpaper-preview.jpg)
+}
+
+article{
+    float: right;
+    width: 80%;
+}
+
+aside{
+    float: left;
+    width: 20%;
+}
+
+div{
+    display: block;
+}
+
+#logo{
+    width: 100%;
+    height: 216px;
+    border-bottom: 1px solid #cbb713;
+    background: #FFFFFF url(https://upload.wikimedia.org/wikipedia/en/f/fc/2023_Pokémon_World_Championships_logo.png) no-repeat right;
+    background-size: contain;
+}
+
+#navegador > div > ul > a > li{
+    background: #edce01 url(data:image/gif;base64,R0lGODdhAQAWAKEDAN+hA+a3Au3OAf///ywAAAAAAQAWAAACBpSPEsDtBQA7) repeat-x left center;
+    margin: 1px 1px 0 1px;
+    padding: 0 0 0 10px;
+    color: #fff;
+    width: auto;
+    text-shadow: #555 1px 1px 3px;
+    box-shadow: 2px 2px 5px #333;
+}
+
+#navegador li{
+    display: block;
+    position: relative;
+    background: #fff;
+    color: #000;
+    font-size: 14.9px;
+    font-family: sans-serif;
+    padding: 0 0 0 10px;
+    line-height: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid #EEEEEE;
+    text-shadow: #555 1px 1px 3px;
+    box-shadow: 2px 2px 5px #333;
+}
+
+.border{
+    border-collapse: collapse;
+}
+.portada{
+    margin: 15px 5px;
+    background-color: #fffad9;
+    box-shadow: 0.1em 0.1em 1em #ffca2b;
+    border: 1px solid #ffca2b;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.tituloPrincipal{
+    background-color: #ffd865;
+    text-align: center;
+    padding: 4px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+p {
+    margin: 0.4em 0 0.5em 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: sans-serif;
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+.responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+}
+}
+
+@media only screen and (max-width: 500px) {
+.responsive {
+    width: 100%;
+}
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

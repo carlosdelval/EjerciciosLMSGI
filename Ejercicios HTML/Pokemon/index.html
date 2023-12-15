@@ -7,143 +7,10 @@
     <meta name="Pokemon" content="Equipos Pokemon" />
 	<meta name="description" content="Los mejores equipos pokemon." />
     <meta name="author" content="Carlos López Del Val"/>
+    <link href="css/index.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <style>
-
-    article{
-        float: right;
-        width: 80%;
-    }
-
-    aside{
-        float: left;
-        width: 20%;
-    }
-
-    div{
-        display: block;
-    }
-
-    body{
-        background-image: url(https://c4.wallpaperflare.com/wallpaper/931/229/236/pokemon-tile-cartoon-pattern-hd-wallpaper-preview.jpg)
-    }
-
-    #logo{
-        width: 100%;
-        height: 216px;
-        border-bottom: 1px solid #cbb713;
-        background: #FFFFFF url(https://upload.wikimedia.org/wikipedia/en/f/fc/2023_Pokémon_World_Championships_logo.png) no-repeat right;
-        background-size: contain;
-    }
-
-    #navegador > div > ul > a > li{
-        background: #edce01 url(data:image/gif;base64,R0lGODdhAQAWAKEDAN+hA+a3Au3OAf///ywAAAAAAQAWAAACBpSPEsDtBQA7) repeat-x left center;
-        margin: 1px 1px 0 1px;
-        padding: 0 0 0 10px;
-        color: #fff;
-        width: auto;
-        text-shadow: #555 1px 1px 3px;
-        box-shadow: 2px 2px 5px #333;
-    }
-
-    #navegador li{
-        display: block;
-        position: relative;
-        background: #fff;
-        color: #000;
-        font-size: 14.9px;
-        font-family: sans-serif;
-        padding: 0 0 0 10px;
-        line-height: 24px;
-        font-weight: bold;
-        text-decoration: none;
-        border-bottom: 1px solid #EEEEEE;
-        text-shadow: #555 1px 1px 3px;
-        box-shadow: 2px 2px 5px #333;
-    }
-
-    ul{
-        list-style-type: square;
-    }
-    li {
-    text-align: -webkit-match-parent;
-    }
-    .border{
-        border-collapse: collapse;
-    }
-    .portada{
-        margin: 15px 5px;
-        background-color: #fffad9;
-        box-shadow: 0.1em 0.1em 1em #ffca2b;
-        border: 1px solid #ffca2b;
-        border-radius: 25px;
-        overflow: hidden;
-    }
-    .tituloPrincipal{
-        background-color: #ffd865;
-        text-align: center;
-        padding: 4px;
-        font-family: sans-serif;
-        font-weight: bold;
-    }
-    p {
-        margin: 0.4em 0 0.5em 0;
-        display: block;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        font-family: sans-serif;
-    }
-
-    div.gallery {
-    border: 1px solid #ccc;
-    }
-
-    div.gallery:hover {
-    border: 1px solid #777;
-    }
-
-    div.gallery img {
-    width: 100%;
-    height: auto;
-    }
-
-    div.desc {
-    padding: 15px;
-    text-align: center;
-    font-family: sans-serif;
-    }
-
-    * {
-    box-sizing: border-box;
-    }
-
-    .responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
-    }
-
-    @media only screen and (max-width: 700px) {
-    .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
-    }
-
-    @media only screen and (max-width: 500px) {
-    .responsive {
-        width: 100%;
-    }
-    }
-
-    .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-    }
 
     
 </style>
@@ -162,22 +29,27 @@
                 <div class="border">
                     <ul>
                         <li>Navegación:</li>
-                        <a>
+                        <a href="./Torneo.html">
                             <li>
                                 Torneo                      
                             </li> 
                         </a>                      
-                        <a>
+                        <a href="./Top5.html">
                             <li>
                                 Top 5                     
                             </li> 
                         </a> 
-                        <a>
+                        <a href="./Ganador.html">
                             <li>
                                 Equipo Ganador                    
                             </li> 
                         </a> 
-                        <a>
+                        <a href="./TablaTipos.html">
+                            <li>
+                                Tabla tipos             
+                            </li> 
+                        </a> 
+                        <a href="./Galeria.html">
                             <li>
                                 Galería                      
                             </li> 
@@ -220,13 +92,20 @@
                     <div style="font-size: 125%;">Yokohama 2023</div>
                 </div>
                 <div style="float:right; padding:5px; direction: ltr; display: block;">
-                    <img alt="Yokohama.jpg" src="https://automaton-media.com/en/wp-content/uploads/2023/08/20230810-20685-001-1.jpg" height="300px"/>
+                    <img alt="pikachuMain.jpg" src="https://pokemon-yellow.carrd.co/assets/images/image04.gif?v=6ec346a9" height="300px"/>
                 </div>
                 <div style="font-size: 110%; padding: 5px 20px;">
                     <p>El Campeonato Mundial Pokémon 2023 es el evento culminante de la temporada de la Serie de Campeonatos 2023, y jugadores de todo el mundo combatirán por el título de Campeón o Campeona Mundial. Solo se puede acceder a los eventos principales 
                         del Campeonato Mundial Pokémon por invitación. Consulta las páginas de información para jugadores de JCC Pokémon, videojuegos, Pokémon GO y Pokémon UNITE para conocer más detalles sobre el evento de este año.</p>
                     <p>Los Entrenadores combaten durante todo el año en diferentes torneos repartidos por regiones para tener la posibilidad de competir en el Campeonato Mundial Pokémon.</p>
                     <p>En esta web nos dedicaremos a hacer un repaso de los mejores momentos del evento, y nos centraremos concretamente en el torneo de VGC (Videogames Championship), analizando las estrategias usadas por los principales contendientes al título y los equipos usados.</p>
+                </div>
+            </div>
+            <div style="margin: 0 15px; border-top: 1px dashed #FFCA2B; border-bottom: 1px dashed #FFCA2B; height:2px;"></div>
+            <div class="portada" style="margin-bottom: 5px; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NQhZy9KR13U?si=SqjXyOR94otgNnoD&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <img style="float:right; padding:5px; direction: ltr; display: block;" alt="iniciales.jpg" src="https://dinopixel.com/preload/1022/pixel-art-1666708843gif_1666708855.gif" height="300px"/>
                 </div>
             </div>
             <div style="margin: 0 15px; border-top: 1px dashed #FFCA2B; border-bottom: 1px dashed #FFCA2B; height:2px;"></div>
