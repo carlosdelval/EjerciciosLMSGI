@@ -1,5 +1,6 @@
 body{
-    background: url(../images/background.png) repeat-x center fixed;
+    background: url(../images/background.png) center fixed;
+    background-size: cover;
 }
 
 article{
@@ -25,7 +26,7 @@ table{
     border: 1px solid #ffca2b;
     box-shadow: 0.1em 0.1em 1em #ffca2b;
     border-radius: 25px;
-    margin-left: 45px;
+    margin-left: 50px;
     margin-top: 45px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
@@ -40,10 +41,9 @@ table{
     font-family: sans-serif;
     font-weight: bold;
     line-height: 1.5em;
-    direction: ltr;
     font-size: 100%;
     text-align: center;
-    width: 150px;
+    width: 250px;
     border: 1px solid #ffca2b;
     box-shadow: 0.1em 0.1em 1em #ffca2b;
     border-radius: 25px;
@@ -95,14 +95,6 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-family: sans-serif;
-}
-
-div.gallery {
-    border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-    border: 1px solid #777;
 }
 
 div.gallery img {
