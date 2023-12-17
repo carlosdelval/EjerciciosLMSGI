@@ -1,5 +1,5 @@
 body{
-    background-image: url(https://c4.wallpaperflare.com/wallpaper/931/229/236/pokemon-tile-cartoon-pattern-hd-wallpaper-preview.jpg)
+    background: url(../images/background.png) repeat-x center fixed;
 }
 
 article{
@@ -12,42 +12,60 @@ aside{
     width: 20%;
 }
 
-div{
-    display: block;
-}
-
-#logo{
-    width: 100%;
-    height: 216px;
-    border-bottom: 1px solid #cbb713;
-    background: #FFFFFF url(https://upload.wikimedia.org/wikipedia/en/f/fc/2023_Pokémon_World_Championships_logo.png) no-repeat right;
-    background-size: contain;
-}
-
-#navegador > div > ul > a > li{
-    background: #edce01 url(data:image/gif;base64,R0lGODdhAQAWAKEDAN+hA+a3Au3OAf///ywAAAAAAQAWAAACBpSPEsDtBQA7) repeat-x left center;
-    margin: 1px 1px 0 1px;
-    padding: 0 0 0 10px;
-    color: #fff;
-    width: auto;
-    text-shadow: #555 1px 1px 3px;
-    box-shadow: 2px 2px 5px #333;
+table{
+    font-family: sans-serif;
+    color: #000000;
+    line-height: 1.5em;
+    direction: ltr;
+    font-size: 100%;
+    text-align: center;
+    background: #fffad9;
+    width: 150px;
+    background:#fffad9;
+    border: 1px solid #ffca2b;
+    box-shadow: 0.1em 0.1em 1em #ffca2b;
+    border-radius: 25px;
+    margin-left: 45px;
+    margin-top: 45px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    text-shadow: #555 1px 1px 2px;
+    overflow: hidden;
 }
 
 #navegador li{
     display: block;
-    position: relative;
-    background: #fff;
-    color: #000;
-    font-size: 14.9px;
+    background: #fffad9;
+    color: #000000;
     font-family: sans-serif;
-    padding: 0 0 0 10px;
-    line-height: 24px;
     font-weight: bold;
+    line-height: 1.5em;
+    direction: ltr;
+    font-size: 100%;
+    text-align: center;
+    width: 150px;
+    border: 1px solid #ffca2b;
+    box-shadow: 0.1em 0.1em 1em #ffca2b;
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+#navegador li:hover{
+    background: #f53a3a;
+}
+
+a {
+    outline: none;
     text-decoration: none;
-    border-bottom: 1px solid #EEEEEE;
-    text-shadow: #555 1px 1px 3px;
-    box-shadow: 2px 2px 5px #333;
+  }
+
+a:hover{
+    outline:auto;
+}
+
+#navegador a:hover{
+    outline: none;
 }
 
 .border{
@@ -67,6 +85,7 @@ div{
     padding: 4px;
     font-family: sans-serif;
     font-weight: bold;
+    text-shadow: #555 1px 1px 3px;
 }
 p {
     margin: 0.4em 0 0.5em 0;
