@@ -114,6 +114,10 @@ div.desc {
     width: 24.99999%;
 }
 
+.zoom:hover {
+    transform: scale(2);
+}
+
 @media only screen and (max-width: 1600px){
     .responsivo2{
         display: flex;
