@@ -1,27 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Ejercicio Bootstrap 5</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container-fluid p-5 bg-primary text-white ">
-        <h1>Business Name or Tagline</h1>
-        <p style="color: rgba(255, 255, 255, 0.432);">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error voluptas fugiat eveniet perspiciatis quos maiores architecto et in, mollitia modi veniam totam facilis alias ullam, nisi aperiam quibusdam cumque adipisci!</p>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top text-white">
+        <div class="container-fluid">
+            <h4>LMSGI</h4>
+            <ul class="navbar-nav text-end">
+                <li class="nav-item">
+                    <a class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid p-5 bg-primary text-white" style="margin-top: 20px;">
+        <h1 style="font-size: 60px;">Business Name or Tagline</h1>
+        <p style="color: rgba(255, 255, 255, 0.432);">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
+            voluptas fugiat eveniet perspiciatis quos maiores architecto et in, mollitia modi veniam totam facilis alias
+            ullam, nisi aperiam quibusdam cumque adipisci!</p>
     </div>
     <div class="container-fluid p-5 bg-white text-black">
         <div class="row">
-            <div class="col-8">
+            <div class="col-lg-8">
                 <h1>What we do</h1>
                 <hr>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, blanditiis. Totam in sint minima alias aut iusto mollitia praesentium libero numquam? Optio molestiae sunt assumenda perferendis placeat ex provident inventore!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil officia veniam ipsam, nam quaerat obcaecati commodi distinctio dolorem magni in, sint eaque error? Ab illum atque reiciendis dicta earum. Possimus dolore, sit quo magnam, et beatae excepturi itaque ullam omnis magni repellat commodi! Quo, autem!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, blanditiis. Totam in sint minima
+                    alias aut iusto mollitia praesentium libero numquam? Optio molestiae sunt assumenda perferendis
+                    placeat ex provident inventore!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil officia veniam ipsam, nam quaerat
+                    obcaecati commodi distinctio dolorem magni in, sint eaque error? Ab illum atque reiciendis dicta
+                    earum. Possimus dolore, sit quo magnam, et beatae excepturi itaque ullam omnis magni repellat
+                    commodi! Quo, autem!</p>
                 <button type="button" class="btn btn-primary">Call to action >></button>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4">
                 <h1>Contact us</h1>
                 <hr>
                 <div>
@@ -33,31 +61,44 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid p-5 bg-white text-black">
-            <div class="row">
-            <div class="col">
-                <h3>Card title</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veritatis commodi totam. Esse, ipsum possimus. Corporis laudantium sint, eos tenetur qui ratione rerum, atque veniam, natus eum nostrum ducimus minus.</p>
-                <div>
-                    <button type="button" class="btn btn-primary">Find out more!</button>
+    </div>
+    <div class="container-fluid p-5 bg-white text-black">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://dummyimage.com/300x200/000/fff" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text.</p>
+                        <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
                 </div>
             </div>
-            <div class="col">
-                <h3>Card title</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veritatis commodi totam. Esse, ipsum possimus. Corporis laudantium sint, eos tenetur qui ratione rerum, atque veniam, natus eum nostrum ducimus minus.</p>
-                <div>
-                    <button type="button" class="btn btn-primary">Find out more!</button>
+            <div class="col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://dummyimage.com/300x200/000/fff" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text.</p>
+                        <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
                 </div>
             </div>
-            <div class="col">
-                <h3>Card title</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veritatis commodi totam. Esse, ipsum possimus. Corporis laudantium sint, eos tenetur qui ratione rerum, atque veniam, natus eum nostrum ducimus minus.</p>
-                <div>
-                    <button type="button" class="btn btn-primary">Find out more!</button>
+            <div class="col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://dummyimage.com/300x200/000/fff" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text.</p>
+                        <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
     </div>
-  </body>
+    <footer class="bg-dark p-5 text-white">
+        <p style="text-align: center;">Copyright © Your Website 2024</p>
+    </footer>
+</body>
+
 </html>
