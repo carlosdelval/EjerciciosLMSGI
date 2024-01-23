@@ -11,18 +11,146 @@
 </head>
 
 <body>
-    <header class="container-fluid" style="text-align: center; background-color: rgb(228, 93, 44); color: rgb(255, 255, 255);">
+    <header class="container-fluid" style="text-align: center; background-color: #ff7b00; color: rgb(255, 255, 255);">
         <img class="pt-5" src="Images/logoblancoelmundo.png" style="width: 15%;">
         <h1 class="pt-4" style="font-weight: bolder;">Haz posible la Verdad</h1>
         <h4 class="pt-1 pb-5" style="font-size: medium;">Solo necesitamos unos cuantos datos antes de darte la bienvenida a la comunidad.</h4>
-        <button class="btn" type="button" style="margin-bottom: 50px; border-color: white; color: white; background-color: rgb(228, 93, 44);">¿Es para regalar? Prueba este otro formulario</button>
+        <button class="btn" type="button" style="margin-bottom: 50px; border-color: white; color: white; background-color: #ff7b00;">¿Es para regalar? Prueba este otro formulario</button>
     </header>
-    <div class="container pt-2">
+    <div class="container pt-2 w-50">
         <button class="btn" type="button" style="background-color: rgb(236, 236, 236);">← Volver a Opciones de Suscripción</button>
         <h3 class="pt-5" style="text-align: center;">Suscripción anual a El Mundo Today:</h3>
         <h3 style="font-weight: 600; text-align: center;">550€</h3>
         <h3 class="p-5" style="color: rgb(105, 216, 216); font-weight: 600; text-align: center;">SUSCRÍBETE Y APOYA EL PERIODISMO LIBRE</h3>
-        <p class="pt-5" style="margin-left: 200px;">El precio de la membresía es de <span style="font-weight: bold;">550.00€ al año.</span></p>
-        <p style="font-size: x-small; margin-left: 200px;">¿Tienes un código de descuento? <span style="text-decoration: underline;">Haz clic aquí para introducir tu código de descuento</span></p>
+        <p class="pt-5">El precio de la membresía es de <span style="font-weight: bold;">550.00€ al año.</span></p>
+        <p style="font-size: x-small;">¿Tienes un código de descuento? <a href="#" style="text-decoration: underline; color: black;">Haz clic aquí para introducir tu código de descuento</a></p>
     </div>
+    <div class="container w-50 p-2">
+        <hr class="p-2">
+        <h2>Información de la cuenta&nbsp;<span style="font-size: small;">¿Ya tienes una cuenta?&nbsp;<a href="#" style="text-decoration: underline; color: #ff7b00;">Accede aquí</a></span>
+        </h2>
+        <form action="/action_page.php">
+          <div class="mb-3 mt-3">
+            <label for="email">Nombre de usuario:</label>
+            <input type="email" class="form-control" id="email" name="email">
+          </div>
+          <div class="mb-3">
+            <label for="pwd">Contraseña:</label>
+            <input type="password" class="form-control" id="pwd" name="pswd">
+          </div>
+          <div class="mb-3">
+            <label for="pwd">Confirma tu contraseña:</label>
+            <input type="password" class="form-control" id="pwd" name="pswd">
+          </div>
+          <div class="mb-3">
+            <label for="pwd">Dirección de correo electrónico:</label>
+            <input type="password" class="form-control" id="pwd" name="pswd">
+          </div>
+          <div class="mb-3">
+            <label for="pwd">Confirma la dirección de correo electrónico:</label>
+            <input type="password" class="form-control" id="pwd" name="pswd">
+          </div>
+        </form>
+    </div>
+    <div class="container w-50 p-2">
+        <hr class="p-2">
+        <h2>Elige el método de pago</h2>
+        <div class="row py-3">
+            <div class="col-md">
+                <div class="form-check">
+                    <input style="color: #ff7b00;" type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Pago con tarjeta de crédito
+                    <label class="form-check-label" for="radio1"></label>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="form-check">
+                    <input style="color: #ff7b00;" type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Pago con PayPal
+                    <label class="form-check-label" for="radio1"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container w-50 p-2" style="background-color: rgb(226, 222, 222);">
+        <h2 class="pt-5">Información de pago&nbsp;<span style="font-size: small;">Aceptamos las principales tarjetas de crédito</span>
+        </h2>
+        <form action="/action_page.php">
+            <div class="mb-3 mt-3">
+                <label for="email">Número de la tarjeta:</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="1234 1234 1234 1234">
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <div class="mb-3">
+                        <label for="pwd">Fecha de caducidad:</label>
+                        <input type="password" class="form-control" id="pwd" name="pswd" placeholder="MM / AA">
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="mb-3">
+                        <label for="pwd">CVC:</label>
+                        <input type="password" class="form-control" id="pwd" name="pswd" placeholder="CVC">
+                    </div>
+                </div>
+            </div>
+            <img src="Images/pagar.png">
+            <div class="row">
+                <div class="col-md">
+                    <div class="mb-3 pt-3">
+                        <label for="pwd">Código de descuento:</label>
+                        <input type="password" class="form-control" id="pwd" name="pswd">
+                    </div>
+                </div>
+                <div class="col-md" style="margin-top: 45px;">
+                    <a href="#" style="color: black;">Aplicar</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="container w-50 p-2 mb4">
+        <hr>
+        <h2>Join our mailing list.</h2>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
+            <label class="form-check-label">Newsletters exclusivas de El Mundo Today</label>
+        </div>
+        <hr class="pt-2">
+        <button class="btn p-4" type="button" style="color: white; background-color: #000000;">Enviar y pagar</button>
+    </div>
+    <footer class="container-fluid-md" style="text-align: center; background-color:#3d3c3c;">
+        <div class="container-md p-4">
+            <a href="#" style="text-decoration: none;"><p style="color: rgb(105, 216, 216)";><span><i class="fa-solid fa-user" style="color: #69d8d8;"></i></span>&nbsp;INICIAR SESIÓN</p></a>
+            <div class="row p-4">
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"><a class="nav-link" href="#"><i class="fa-brands fa-facebook-f fa-2xl" style="color: #ff7b00;"></i></a></div>
+                <div class="col-1"><a class="nav-link" href="#"><i class="fa-brands fa-instagram  fa-2xl" style="color: #ff7b00;"></i></a></div>
+                <div class="col-1"><a class="nav-link" href="#"><i class="fa-solid fa-envelope fa-2xl" style="color: #ff7b00;"></i></a></div>
+                <div class="col-2"><a class="nav-link" href="#"><i class="fa-brands fa-telegram fa-2xl" style="color: #ff7b00;"></i></a></div>
+                <div class="col-1"><a class="nav-link" href="#"><i class="fa-brands fa-tiktok fa-2xl" style="color: #ff7b00;"></i></a></div>
+                <div class="col-1"><a class="nav-link" href="#"><i class="fa-brands fa-twitter fa-2xl" style="color: #ff7b00;"></i></a></div>
+                <div class="col-1"><a class="nav-link" href="#"><i class="fa-brands fa-youtube fa-2xl" style="color: #ff7b00;"></i></a></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+            </div>
+            <img class="p-4" style="width: 20%;" src="Images/logofooter.png">
+        </div>
+        <button class="btn" type="button" style="background-color: #ff7b00; color: white;">Suscribete</button>
+        <div class="container p-4">
+            <div class="row" style="font-size:xx-small; color: white;">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-1"><a class="nav-link" href="#">POLÍTICA&nbsp;DE&nbsp;COOKIES</a></div>
+                <div class="col-lg-1">◆</div>
+                <div class="col-lg-2"><a class="nav-link" href="#">AVISO LEGAL&nbsp;Y&nbsp;POLÍTICA&nbsp;DE&nbsp;PRIVACIDAD</a></div>
+                <div class="col-lg-1">◆</div>
+                <div class="col-lg-2"><a class="nav-link" href="#">CONTACTO&nbsp;Y&nbsp;PUBLICIDAD</a></div>
+                <div class="col-lg-1">◆</div>
+                <div class="col-lg-1"><a class="nav-link" href="#">TIENDA</a></div>
+            </div>
+        </div>
+        <div class="container-md p-3" style="color: white; font-size: smaller;">
+            <p>CON EL APOYO TECNOLÓGICO DE</p>
+            <a class="nav-link" href="#"><img style="width: auto;" src="Images/logopubli.png"></a>
+            <p class="p-3">© EL MUNDO TODAY</p>
+        </div>
+    </footer>
 </body>
