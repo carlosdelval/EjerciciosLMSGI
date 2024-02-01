@@ -10,6 +10,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
+<style>
+    a{
+        text-decoration: none;
+        color: #000000;
+    }
+    a:hover{
+        color: #ff7b00;
+    }
+    i:hover{
+        color: #ff7b00 !important;
+    }
+    
+</style>
+
 <body>
     <nav class="navbar navbar-expand-md navbar-light">
         <div class="container">
@@ -57,13 +71,13 @@
                     <img class="img-fluid" src="Images/logo-elmundotoday2.png">
                 </a>
             </div>
-            <div class="container">
+            <div class="container-md">
                 <ul class="nav justify-content-end">
                     <li class="nav-item">
                         <a href="#" class="btn d-none d-md-block" style="font-weight: 600;">Iniciar sesión</a>
                     </li>
                     <li class="nav-item">
-                        <a href="formulario.html" class="btn"
+                        <a href="formulario.html" class="btn d-none d-md-block"
                             style="font-weight: 600; background-color:rgb(105, 216, 216) ;">Hazte suscriptor</a>
                     </li>
                 </ul>
@@ -76,7 +90,10 @@
     </div>
     <nav class="navbar sticky-top navbar-expand-lg navbar-ligh" style="background-color: #ffffff;">
         <div class="container-md">
-            <div class="collapse navbar-collapse me-auto" id="mynavbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse me-auto" id="collapsibleNavbar">
                 <ul class="navbar-nav" style="font-weight: 600; font-size:smaller;">
                     <li class="nav-item p-1">
                         <a class="nav-link" href="#">INTERNACIONAL</a>
@@ -129,18 +146,18 @@
                 <div class="container-md">
                     <div class="row">
                         <div class="col-md-12">
-                            <img class="img-fluid" src="Images/tiogafas.jpg">
-                            <h1>Noticia graciosa Noticia graciosa Noticia graciosa Noticia graciosa Noticia
-                            graciosa</h1>
+                            <a href="#"><img class="img-fluid" src="Images/tiogafas.jpg"></a>
+                            <a href="#"><h1>Noticia graciosa Noticia graciosa Noticia graciosa Noticia graciosa Noticia
+                            graciosa</h1></a>
                         </div>
                         <hr>
                         <div class="col-md-6">
-                            <img class="img-fluid" src="Images/motos.png">
-                            <h4>Noticia graciosa noticia graciosa</h4>
+                            <a href="#"><img class="img-fluid" src="Images/motos.png"></a>
+                            <a href="#"><h4>Noticia graciosa noticia graciosa</h4></a>
                         </div>
                         <div class="col-md-6">
-                            <img class="img-fluid" src="Images/tiosilla.jpg">
-                            <h4>Noticia graciosa noticia graciosa</h4>
+                            <a href="#"><img class="img-fluid" src="Images/tiosilla.jpg"></a>
+                            <a href="#"><h4>Noticia graciosa noticia graciosa</h4></a>
                         </div>
                     </div>
                 </div>
@@ -148,8 +165,8 @@
             <div class="col-md-5 p-3">
                 <div class="card"
                     style="width:400px; text-align: center; position: sticky; position: -webkit-sticky; top: 0;">
-                    <img class="card-img-top mx-auto d-block mt-3" style="width: 10%;" src="Images/logo.jpg"
-                        alt="Card image">
+                    <a href="#"><img class="card-img-top mx-auto d-block mt-3" style="width: 10%;" src="Images/logo.jpg"
+                        alt="Card image"></a>
                     <div class="card-body">
                         <h4 class="card-title" style="font-weight: bold;">El boletín de EMT</h4>
                         <p class="card-text" style="font-size:small;">Boletín gratuito con las noticias más relevantes
@@ -171,45 +188,55 @@
             <div class="col-sm-7 p-3">
                 <div class="row">
                     <div class="col-xl-3 col-md-5">
-                        <img src="Images/almeida.jpg">
+                        <a href="#"><img src="Images/almeida.jpg"></a>
                     </div>
                     <div class="col-xl-9 col-md-7">
                         <span class="badge" style="background-color:rgb(105, 216, 216)">ACTUALIDAD</span>
-                        <p class="h5">Noticia graciosa Noticia graciosa Noticia graciosa</p>
+                        <a href="#"><h5>Noticia graciosa Noticia graciosa Noticia graciosa</h5></a>
                     </div>
                 </div>
                 <hr style="border-top: 2px dotted;">
                 <div class="row">
                     <div class="col-xl-3 col-md-5">
-                        <img src="Images/thigref.png">
+                        <a href="#"><img src="Images/thigref.png"></a>
                     </div>
                     <div class="col-xl-9 col-md-7">
                         <span class="badge" style="background-color:rgb(105, 216, 216)">SOCIEDAD</span>
-                        <p class="h5">Noticia graciosa Noticia graciosa Noticia graciosa</p>
+                        <a href="#"><h5>Noticia graciosa Noticia graciosa Noticia graciosa</h5></a>
                     </div>
                 </div>
                 <hr style="border-top: 2px dotted;">
                 <div class="row">
                     <div class="col-xl-3 col-md-5">
-                        <img src="Images/errejones.png">
+                        <a href="#"><img src="Images/errejones.png"></a>
                     </div>
                     <div class="col-xl-9 col-md-7">
                         <span class="badge" style="background-color:rgb(105, 216, 216)">POLÍTICA</span>
-                        <p class="h5">Noticia graciosa Noticia graciosa Noticia graciosa</p>
+                        <a href="#"><h5>Noticia graciosa Noticia graciosa Noticia graciosa</h5></a>
+                    </div>
+                </div>
+                <hr style="border-top: 2px dotted;">
+                <div class="row">
+                    <div class="col-xl-3 col-md-5">
+                        <a href="#"><img src="Images/horoscopos-150x150.jpg"></a>
+                    </div>
+                    <div class="col-xl-9 col-md-7">
+                        <span class="badge" style="background-color:rgb(105, 216, 216)">HORÓSCOPO</span>
+                        <a href="#"><h5>Noticia graciosa Noticia graciosa Noticia graciosa</h5></a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-5 p-3">
                 <div class="card" style="width: 400px;">
                     <div class="card-body" style="background-color: rgb(236, 237, 238);">
-                        <img class="card-img-top mx-auto d-block p-4" src="Images/tioazul.png">
-                        <h4 class="card-text" style="margin-left: 22px;">Noticia graciosa Noticia graciosa Noticia
-                            graciosa Noticia graciosa Noticia graciosa</h4>
+                        <a href="#"><img class="card-img-top mx-auto d-block p-4" src="Images/tioazul.png"></a>
+                        <a href="#"><h4 class="card-text" style="margin-left: 22px;">Noticia graciosa Noticia graciosa Noticia
+                            graciosa Noticia graciosa Noticia graciosa</h4></a>
                     </div>
                     <div class="card-body" style="background-color: rgb(236, 237, 238);">
-                        <img class="card-img-top mx-auto d-block p-4" src="Images/sipollo.png">
-                        <h4 class="card-text" style="margin-left: 22px;">Noticia graciosa Noticia graciosa Noticia
-                            graciosa Noticia graciosa Noticia graciosa</h4>
+                        <a href="#"><img class="card-img-top mx-auto d-block p-4" src="Images/sipollo.png"></a>
+                        <a href="#"><h4 class="card-text" style="margin-left: 22px;">Noticia graciosa Noticia graciosa Noticia
+                            graciosa Noticia graciosa Noticia graciosa</h4></a>
                     </div>
                 </div>
             </div>
@@ -220,31 +247,28 @@
         <div class="container-md p-4">
             <a href="#" style="text-decoration: none;">
                 <p style="color: rgb(105, 216, 216)" ;><span><i class="fa-solid fa-user"
-                            style="color: #69d8d8;"></i></span>&nbsp;INICIAR SESIÓN</p>
+                            style="color: #69d8d8 !important"></i></span>&nbsp;INICIAR SESIÓN</p>
             </a>
-            <div class="row p-4">
-                <div class="col-1"></div>
-                <div class="col-1"></div>
-                <div class="col-1"><a class="nav-link" href="#"><i class="fa-brands fa-facebook-f fa-2xl"
+            
+            <div class="row p-4" style="text-align: center; justify-content: center;">
+                <div class="col-sm-1 col-2"><a class="nav-link" href="#"><i class="fa-brands fa-facebook-f fa-2xl"
                             style="color: #ff7b00;"></i></a></div>
-                <div class="col-1"><a class="nav-link" href="#"><i class="fa-brands fa-instagram  fa-2xl"
+                <div class="col-sm-1 col-2"><a class="nav-link" href="#"><i class="fa-brands fa-instagram  fa-2xl"
                             style="color: #ff7b00;"></i></a></div>
-                <div class="col-1"><a class="nav-link" href="#"><i class="fa-solid fa-envelope fa-2xl"
+                <div class="col-sm-1 col-2"><a class="nav-link" href="#"><i class="fa-solid fa-envelope fa-2xl"
                             style="color: #ff7b00;"></i></a></div>
-                <div class="col-2"><a class="nav-link" href="#"><i class="fa-brands fa-telegram fa-2xl"
+                <div class="col-sm-1 col-2"><a class="nav-link" href="#"><i class="fa-brands fa-telegram fa-2xl"
                             style="color: #ff7b00;"></i></a></div>
-                <div class="col-1"><a class="nav-link" href="#"><i class="fa-brands fa-tiktok fa-2xl"
+                <div class="col-sm-1 col-2"><a class="nav-link" href="#"><i class="fa-brands fa-tiktok fa-2xl"
                             style="color: #ff7b00;"></i></a></div>
-                <div class="col-1"><a class="nav-link" href="#"><i class="fa-brands fa-twitter fa-2xl"
+                <div class="col-sm-1 col-2"><a class="nav-link" href="#"><i class="fa-brands fa-twitter fa-2xl"
                             style="color: #ff7b00;"></i></a></div>
-                <div class="col-1"><a class="nav-link" href="#"><i class="fa-brands fa-youtube fa-2xl"
+                <div class="col-sm-1 col-2"><a class="nav-link" href="#"><i class="fa-brands fa-youtube fa-2xl"
                             style="color: #ff7b00;"></i></a></div>
-                <div class="col-1"></div>
-                <div class="col-1"></div>
             </div>
             <img class="p-4" style="width: 20%;" src="Images/logofooter.png">
         </div>
-        <button class="btn" type="button" style="background-color: #ff7b00; color: white;">Suscribete</button>
+        <a href="formulario.html"><button class="btn" type="button" style="background-color: #ff7b00; color: white;">Suscribete</button></a>
         <div class="container p-4">
             <div class="row" style="font-size:xx-small; color: white;">
                 <div class="col-lg-2"></div>

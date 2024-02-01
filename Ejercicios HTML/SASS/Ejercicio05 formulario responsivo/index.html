@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Formulario Responsivo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div style="text-align: center;" class="container-md w-75 p-5">
+        <img style="width: 100px;" src="images/bootstrap-logo-shadow.png">
+        <h1 class="pt-3" style="font-weight: bold;">Checkout form</h1>
+        <p style="color: grey;" class="p-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste quibusdam,
+            voluptatem natus blanditiis
+            odio non! Iure ipsam esse, laborum quidem suscipit, expedita autem eaque aliquam, reiciendis quia odio
+            architecto maxime.</p>
+        <div class="row pt-5" style="text-align: left;">
+            <div class="col-xl-8 order-2 order-xl-1">
+                <h3 class="py-2" style="font-weight: bold;">Billing address</h3>
+                <form>
+                    <div class="row">
+                        <div class="col-lg">
+                            <p>First name</p>
+                            <input type="text" class="form-control" name="1st name">
+                        </div>
+                        <div class="col-lg">
+                            <p>Last name</p>
+                            <input type="text" class="form-control" name="2nd name">
+                        </div>
+                        <div class="col-12 pt-3">
+                            <p>Username</p>
+                            <div class="row">
+                                <div class="col-1"><input style="background-color: rgb(240, 240, 240);" type="text"
+                                        class="form-control" placeholder="@" name="username" disabled></div>
+                                <div class="col-11"><input type="text" class="form-control" placeholder="Username"
+                                        name="username"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 pt-3">
+                            <p>E-mail (Optional)</p>
+                            <input type="text" class="form-control" placeholder="you@example.com" name="2nd name">
+                        </div>
+                        <div class="col-12 pt-3">
+                            <p>Address</p>
+                            <input type="text" class="form-control" placeholder="1234 Main St" name="2nd name">
+                        </div>
+                        <div class="col-12 pt-3">
+                            <p>Address 2</p>
+                            <input type="text" class="form-control" placeholder="Apartment or suite" name="2nd name">
+                        </div>
+                        <div class="col-md-4 pt-3">
+                            <p>Country</p>
+                            <div class="dropdown form-control">
+                                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                  Choose...
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Country 1</a></li>
+                                  <li><a class="dropdown-item" href="#">Country 2</a></li>
+                                  <li><a class="dropdown-item" href="#">Country 3</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                        <div class="col-md-4 pt-3">
+                            <p>State</p>
+                            <div class="dropdown form-control">
+                                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                  Choose...
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">State 1</a></li>
+                                  <li><a class="dropdown-item" href="#">State 2</a></li>
+                                  <li><a class="dropdown-item" href="#">State 3</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                        <div class="col-md-4 pt-3">
+                            <p>Zip</p>
+                            <input type="text" class="form-control" name="zip">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div style="text-align: left;" class="col-xl-4 order-1 order-xl-2">
+                <div class="row p-2">
+                    <div class="col-10">
+                        <h3 style="color: grey">Your cart</h3>
+                    </div>
+                    <div class="col-2 text-white">
+                        <span class="badge rounded-pill" style="background-color: grey;">3</span>
+                    </div>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-10">
+                                <p><span style="font-weight: bold;">Product name</span><br><span
+                                        style="color: grey; font-size: small;">Brief description</span></p>
+                            </div>
+                            <div class="col-2">
+                                <p style="color: grey; text-align: right;">$12</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-10">
+                                <p><span style="font-weight: bold;">Second name</span><br><span
+                                        style="color: grey; font-size: small;">Brief description</span></p>
+                            </div>
+                            <div class="col-2">
+                                <p style="color: grey; text-align: right;">$8</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-10">
+                                <p><span style="font-weight: bold;">Third name</span><br><span
+                                        style="color: grey; font-size: small;">Brief description</span></p>
+                            </div>
+                            <div class="col-2">
+                                <p style="color: grey; text-align: right;">$5</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item" style="background-color: rgb(250, 250, 250);">
+                        <div style="color: green;" class="row">
+                            <div class="col-10">
+                                <p><span style="font-weight: bold;">Promo code</span><br><span
+                                        style="font-size: small;">EXAMPLECODE</span></p>
+                            </div>
+                            <div class="col-2">
+                                <p style="text-align: right;">-$5</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-10">
+                                <p style="font-weight: bold;">Total (USD)</p>
+                            </div>
+                            <div class="col-2">
+                                <p style="font-weight: bold; text-align: right;">$20</p>
+                            </div>
+                        </div>
+                    </li><br>
+                    <li class="list-group-item">
+                        <div class="btn-group bg-white p-1" style="border-color: grey;">
+                            <input class="form-control me-2" style="border-color: grey" placeholder="Promo code"
+                                type="text">
+                            <button class="btn text-white" type="button"
+                                style="height: 40px; background-color: grey; font-weight: 600;">Redeem</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
