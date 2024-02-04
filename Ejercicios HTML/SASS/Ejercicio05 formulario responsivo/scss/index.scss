@@ -1,7 +1,34 @@
 /* Define standard variables and values for website */
 $bgcolor: rgb(250, 250, 250);
+$textcolor: rgb(0, 0, 0);
+$textcolor2: grey;
+$promocodecolor: green;
+$buttoncolor: rgb(17, 114, 224);
+$hoverbuttoncolor: rgb(41, 130, 231);
 
 /* Use the variables */
 body {
   background-color: $bgcolor;
+  color: $textcolor;
+}
+.promocode{
+  color: $promocodecolor;
+}
+.buttonfinal{
+  background-color: $buttoncolor;
+}
+.buttonfinal:hover{
+  background-color: $hoverbuttoncolor;
+}
+
+@mixin color-titulo($textcolor) {
+  font-weight: bold;
+  color: $textcolor;
+}
+
+.titulo1{
+  @include color-titulo($textcolor)
+}
+.titulo2{
+  @include color-titulo($textcolor2)
 }

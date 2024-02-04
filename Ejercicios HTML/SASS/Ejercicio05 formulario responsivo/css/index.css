@@ -3,4 +3,26 @@
 /*# sourceMappingURL=index.css.map */
 body {
     background-color: rgb(250, 250, 250);
-}           
+    color: rgb(0, 0, 0);
+}
+
+.promocode{
+    color: green;
+}
+
+.buttonfinal{
+    background-color: rgb(17, 114, 224);
+}
+
+.buttonfinal:hover{
+    background-color: rgb(41, 130, 231);
+}
+
+.titulo1{
+    color: grey;
+    font-weight: bold;
+}
+.titulo2{
+    color: black;
+    font-weight: bold;
+}
