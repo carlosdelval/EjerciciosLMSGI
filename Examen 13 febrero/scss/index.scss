@@ -1,0 +1,26 @@
+$tittlecolor: rgb(255, 255, 255);
+$tittlecolor2: rgb(0, 0, 0);
+$buttoncolor: rgb(0, 117, 226);
+$bgcolor: rgb(255, 255, 255);
+
+body {
+  background-color: $bgcolor;
+  color: $tittlecolor2;
+}
+
+.button {
+  background-color: $buttoncolor;
+}
+
+@mixin color-titulo($color) {
+    color: $color;
+    font-size:large;
+    font-weight: bold;
+  }
+  
+  .titulo1{
+    @include color-titulo($tittlecolor)
+  }
+  .titulo2{
+    @include color-titulo($tittlecolor2)
+  }

@@ -1,0 +1,23 @@
+
+
+/*# sourceMappingURL=index.css.map */
+
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.titulo1{
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-weight: bold;
+}
+.titulo2{
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-weight: bold;
+}
+
+.button{
+    background-color: rgb(17, 114, 224);
+}
